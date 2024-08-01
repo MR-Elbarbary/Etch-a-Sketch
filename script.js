@@ -1,3 +1,5 @@
+let numberOfBoxes = 16;
+
 function buildTheGrid (numberOfBoxes) {
     let container = document.querySelector(".container")
     let size = `${100/numberOfBoxes}%`
@@ -10,13 +12,28 @@ function buildTheGrid (numberOfBoxes) {
     }
 }
 
+function cleanContainer(){
+    let container = document.querySelector(".container")
+    container.innerHTML = '';
+}
+
+function resize() {
+    numberOfBoxes = prompt("number of grids max 100 (100x100)")
+    cleanContainer()
+    buildTheGrid(numberOfBoxes)
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    buildTheGrid(32);
-    let resize = document.addEventListener("click", () =>{})
+    buildTheGrid(numberOfBoxes);
+
+    let size = document.querySelector(".size")
+    size.addEventListener("click", () =>{
+        resize()
+    })
+
     let grips = document.querySelectorAll(".block")
     grips.forEach(grip => {
-        grip.addEventListener("hover", () =>{
-
+        grip.addEventListener("hover", (event) =>{
         })
     });
 })
