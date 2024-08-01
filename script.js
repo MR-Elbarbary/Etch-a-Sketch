@@ -11,6 +11,12 @@ function buildTheGrid (numberOfBoxes) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    buildTheGrid(16);
+    buildTheGrid(32);
     let resize = document.addEventListener("click", () =>{})
+    let grips = document.querySelectorAll(".block")
+    grips.forEach(grip => {
+        grip.addEventListener("hover", () =>{
+
+        })
+    });
 })
