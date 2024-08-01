@@ -1,0 +1,33 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 10px;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    height: 180px;
+    width: 180px;
+    border: 2px solid antiquewhite;
+    background-color: black;
+}
+.block{
+    background-color: white;
+    box-sizing: border-box;
+    border: 0.1px solid;
+    border-color: antiquewhite;
+    
+}
+.size{
+    height: 10px;
+    font-size: 5px;
+    padding: 0px 2px;
+    margin: 0px;
+}
