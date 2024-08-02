@@ -8,11 +8,13 @@
     <title>Etch-e-Sketch</title>
 </head>
 <body>
-    <input type="range" min="8" max="100" value="32" id="slider">
-    <input type="color" value="#000000" id="color">
-    <button id="eraser">Eraser</button>SS
-    <button id="random">Random</button>
-    <button class="restart">restart</button>
+    <div class="settings">
+        <input type="range" min="8" max="100" value="32" id="slider">
+        <span>Color: <input type="color" value="#000000" id="color"></span>
+        <button id="eraser">Eraser</button>
+        <button id="random">Random</button>
+        <button class="restart">restart</button>
+    </div>
 
     <div class="container">
     </div>

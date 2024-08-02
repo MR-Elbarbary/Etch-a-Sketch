@@ -78,11 +78,13 @@ function changeRandom() {
 
 document.addEventListener("DOMContentLoaded", () => {
     let toggleEraser = document.querySelector("#eraser")
+    toggleEraser.style.backgroundColor = "red"
     toggleEraser.addEventListener("click", ()=> {
         changeEraser()
     })
 
     let toggleRandom = document.querySelector("#random")
+    toggleRandom.style.backgroundColor = "red"
     toggleRandom.addEventListener("click", () => {
         changeRandom()
     })

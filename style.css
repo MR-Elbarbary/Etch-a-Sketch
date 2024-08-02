@@ -5,19 +5,42 @@
 body{
     margin: 0px;
     display: flex;
+    flex-wrap: wrap;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .container{
-    margin-top: 8px;
+    margin-top: 0px;
     display: flex;
     flex: auto;
     flex-wrap: wrap;
-    height: 640px;
-    width: 640px;
+    height: 740px;
+    width: 740px;
     border: 2px solid antiquewhite;
 }
+
+.settings{
+    background-color:aquamarine;
+    display: flex;
+    width: 722px;
+    height: 60px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+button{
+    font-size: large;
+    border-radius: 25%;
+    padding: 5px 5px;
+}
+.restart{
+    background-color: blue;
+    color: aliceblue;
+}
+
 .block{
     background-color: white;
     box-sizing: border-box;
